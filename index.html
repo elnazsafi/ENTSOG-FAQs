@@ -353,7 +353,7 @@
             <p class="subtitle">Find answers to common questions about the ENTSOG Transparency Platform</p>
             <div class="stats">
                 <div class="stat-box">
-                    <div class="stat-number">367</div>
+                    <div class="stat-number">356</div>
                     <div class="stat-label">FAQs Available</div>
                 </div>
                 <div class="stat-box">
@@ -371,7 +371,7 @@
             <div class="toc">
                 <h2>Browse by Category</h2>
                 <div class="toc-grid">
-                    <div class="toc-item"><a href="#api"><span>API</span><span class="category-count">76</span></a></div>
+                    <div class="toc-item"><a href="#api"><span>API</span><span class="category-count">63</span></a></div>
                     <div class="toc-item"><a href="#cmp-data"><span>CMP Data</span><span class="category-count">7</span></a></div>
                     <div class="toc-item"><a href="#collaboration"><span>Collaboration</span><span class="category-count">4</span></a></div>
                     <div class="toc-item"><a href="#data-display"><span>Data Display</span><span class="category-count">2</span></a></div>
@@ -403,688 +403,571 @@
             
             <div id="faqContent">
             <div class="category" id="api">
-                <div class="category-header"><span>API</span><span class="category-count">76</span></div>
+                <div class="category-header"><span>API</span><span class="category-count">63</span></div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-0')">
-                        <div class="question">Are API parameter values case-sensitive?</div>
+                        <div class="question">Are API parameter values and calls case-sensitive?</div>
                         <div class="toggle-icon" id="icon-api-faq-0">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-0">
-                        <div class="answer">Yes, all parameter values are case-sensitive. Exact spelling and capitalization must be used. For example, 'indicator=Firm Booked' works, but 'indicator=Firm booked' returns no results. Users should copy parameter values directly from referential endpoints to avoid mismatches.</div>
+                        <div class="answer">Yes, all API parameter values and calls are CASE SENSITIVE. Exact spelling and capitalization must be used. This is especially important for operator names in UMM queries, which must match exactly as shown in the GUI dropdown. For example, 'indicator=Firm Booked' works, but 'indicator=Firm booked' returns no results. Users should copy parameter values directly from referential endpoints to avoid mismatches.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-1')">
-                        <div class="question">Are UMM API calls case sensitive?</div>
+                        <div class="question">Can I query multiple operators in a single API call?</div>
                         <div class="toggle-icon" id="icon-api-faq-1">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-1">
-                        <div class="answer">Yes, UMM API calls are CASE SENSITIVE. This is especially important when defining UMMs for individual operators - the operator name must be identical to the operator name in the dropdown in the GUI.</div>
-                    </div>
-                </div>
-                <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-2')">
-                        <div class="question">Can I query multiple operators in a single API call?</div>
-                        <div class="toggle-icon" id="icon-api-faq-2">▼</div>
-                    </div>
-                    <div class="answer-container" id="api-faq-2">
                         <div class="answer">API query capabilities for multiple operators or labels depend on the specific API endpoint. Refer to the API manual in the Subscribe section for details on parameter usage and multi-operator queries.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-3')">
+                    <div class="question-header" onclick="toggleAnswer('api-faq-2')">
                         <div class="question">Can data be downloaded in JSON format from the transparency platform?</div>
-                        <div class="toggle-icon" id="icon-api-faq-3">▼</div>
+                        <div class="toggle-icon" id="icon-api-faq-2">▼</div>
                     </div>
-                    <div class="answer-container" id="api-faq-3">
+                    <div class="answer-container" id="api-faq-2">
                         <div class="answer">Yes, the API calls are in JSON format by default.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-4')">
+                    <div class="question-header" onclick="toggleAnswer('api-faq-3')">
                         <div class="question">How do I access the ENTSOG Transparency Platform API?</div>
-                        <div class="toggle-icon" id="icon-api-faq-4">▼</div>
+                        <div class="toggle-icon" id="icon-api-faq-3">▼</div>
                     </div>
-                    <div class="answer-container" id="api-faq-4">
+                    <div class="answer-container" id="api-faq-3">
                         <div class="answer">No special access is needed. You can create API calls using the GUI by selecting the points and indicators you're interested in on the Transparency Platform. The API manual is available under the Subscribe section, and tutorial videos are in the Help/Videos section.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-5')">
+                    <div class="question-header" onclick="toggleAnswer('api-faq-4')">
                         <div class="question">How do I filter API results by multiple parameter values?</div>
-                        <div class="toggle-icon" id="icon-api-faq-5">▼</div>
+                        <div class="toggle-icon" id="icon-api-faq-4">▼</div>
                     </div>
-                    <div class="answer-container" id="api-faq-5">
+                    <div class="answer-container" id="api-faq-4">
                         <div class="answer">Use comma-separated values for a single parameter. For example: indicator=Nomination,Allocation returns data for Nomination OR Allocation. Multiple parameters are separated by '&'.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-6')">
+                    <div class="question-header" onclick="toggleAnswer('api-faq-5')">
                         <div class="question">How do I filter UMMs to show only active events?</div>
-                        <div class="toggle-icon" id="icon-api-faq-6">▼</div>
+                        <div class="toggle-icon" id="icon-api-faq-5">▼</div>
                     </div>
-                    <div class="answer-container" id="api-faq-6">
+                    <div class="answer-container" id="api-faq-5">
                         <div class="answer">Add the parameter 'events=Active' to your API call to filter for active events only.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-7')">
+                    <div class="question-header" onclick="toggleAnswer('api-faq-6')">
                         <div class="question">How do I get only the latest version of a UMM?</div>
-                        <div class="toggle-icon" id="icon-api-faq-7">▼</div>
+                        <div class="toggle-icon" id="icon-api-faq-6">▼</div>
                     </div>
-                    <div class="answer-container" id="api-faq-7">
+                    <div class="answer-container" id="api-faq-6">
                         <div class="answer">Use the parameter 'isLatestVersion=Yes' in your API call to retrieve only the latest version of UMMs.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-8')">
+                    <div class="question-header" onclick="toggleAnswer('api-faq-7')">
                         <div class="question">How do I include Not Applicable (N/A) data in API results?</div>
-                        <div class="toggle-icon" id="icon-api-faq-8">▼</div>
+                        <div class="toggle-icon" id="icon-api-faq-7">▼</div>
                     </div>
-                    <div class="answer-container" id="api-faq-8">
+                    <div class="answer-container" id="api-faq-7">
                         <div class="answer">Use the includeExemptions parameter. Set includeExemptions=1 to return populated data plus N/A instances (exemptions under Regulation 715). Use isNA=1 to return only N/A records, or isNA=0 to return only valid data.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-9')">
+                    <div class="question-header" onclick="toggleAnswer('api-faq-8')">
                         <div class="question">How do I query UMMs for a specific date range?</div>
-                        <div class="toggle-icon" id="icon-api-faq-9">▼</div>
+                        <div class="toggle-icon" id="icon-api-faq-8">▼</div>
                     </div>
-                    <div class="answer-container" id="api-faq-9">
+                    <div class="answer-container" id="api-faq-8">
                         <div class="answer">Use the from and to parameters in the API call. Example: https://transparency.entsog.eu/#/umm/othermarketinformation?from=2020-06-01&to=2020-10-31</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-10')">
+                    <div class="question-header" onclick="toggleAnswer('api-faq-9')">
                         <div class="question">How do I query UMMs for a specific operator?</div>
-                        <div class="toggle-icon" id="icon-api-faq-10">▼</div>
+                        <div class="toggle-icon" id="icon-api-faq-9">▼</div>
                     </div>
-                    <div class="answer-container" id="api-faq-10">
+                    <div class="answer-container" id="api-faq-9">
                         <div class="answer">Use the operator parameter with the exact operator name from the GUI dropdown. Example: https://transparency.entsog.eu/#/umm/othermarketinformation?&operator=Ontras</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-11')">
+                    <div class="question-header" onclick="toggleAnswer('api-faq-10')">
                         <div class="question">How do I query UMMs using a specific UMM ID?</div>
-                        <div class="toggle-icon" id="icon-api-faq-11">▼</div>
+                        <div class="toggle-icon" id="icon-api-faq-10">▼</div>
                     </div>
-                    <div class="answer-container" id="api-faq-11">
+                    <div class="answer-container" id="api-faq-10">
                         <div class="answer">Use the ummids parameter with the specific UMM ID. Example: https://transparency.entsog.eu/#/umm/othermarketinformation?ummids=19041521X-DE-F-A0A0A-2001</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-12')">
+                    <div class="question-header" onclick="toggleAnswer('api-faq-11')">
                         <div class="question">How do I use the LastUpdateDateTime API parameter?</div>
-                        <div class="toggle-icon" id="icon-api-faq-12">▼</div>
+                        <div class="toggle-icon" id="icon-api-faq-11">▼</div>
                     </div>
-                    <div class="answer-container" id="api-faq-12">
+                    <div class="answer-container" id="api-faq-11">
                         <div class="answer">The 'lastUpdateDateTime' parameter can only use the '=' (equal to) operator to query data for a specific date. If you need to track changes over time, consider using the 'updatedSince' parameter, which is currently available for interruptions and is being developed for other indicators.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-13')">
+                    <div class="question-header" onclick="toggleAnswer('api-faq-12')">
                         <div class="question">How do you adjust the date range in a Power Query API call?</div>
-                        <div class="toggle-icon" id="icon-api-faq-13">▼</div>
+                        <div class="toggle-icon" id="icon-api-faq-12">▼</div>
                     </div>
-                    <div class="answer-container" id="api-faq-13">
+                    <div class="answer-container" id="api-faq-12">
                         <div class="answer">In the Applied Steps pane, right-click on 'Added Custom' and select Edit Settings (or click the gear icon). Locate the Start Date and End Date parameters in the formula and update them as needed. After making adjustments, click Close & Load to save the query.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-14')">
+                    <div class="question-header" onclick="toggleAnswer('api-faq-13')">
                         <div class="question">How do you build a customized API URL in Power Query?</div>
-                        <div class="toggle-icon" id="icon-api-faq-14">▼</div>
+                        <div class="toggle-icon" id="icon-api-faq-13">▼</div>
                     </div>
-                    <div class="answer-container" id="api-faq-14">
+                    <div class="answer-container" id="api-faq-13">
                         <div class="answer">Filter the Operator Label column to select specific operators (e.g., GRTgaz) and the Indicator Name column for specific indicators (e.g., Nomination and Physical Flow). Go to Add Column → Custom Column and rename it 'API URL'. Use the ampersand (&) symbol to concatenate different parts of the URL, including operator, indicator, start date, and end date parameters.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-15')">
+                    <div class="question-header" onclick="toggleAnswer('api-faq-14')">
                         <div class="question">How do you build the GetTPData query to fetch data from the Transparency Platform?</div>
-                        <div class="toggle-icon" id="icon-api-faq-15">▼</div>
+                        <div class="toggle-icon" id="icon-api-faq-14">▼</div>
                     </div>
-                    <div class="answer-container" id="api-faq-15">
+                    <div class="answer-container" id="api-faq-14">
                         <div class="answer">Create a new worksheet named 'GetTPData'. Open Power Query Editor, expand the queries list, right-click 'Create URL' and select Reference. Rename the new query to 'API URL'. Right-click the Custom column and select 'Remove Other Columns' to leave only one column. Then invoke the custom function 'fnGetTPDataFromURL' from the Add Column ribbon.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-16')">
+                    <div class="question-header" onclick="toggleAnswer('api-faq-15')">
                         <div class="question">How do you create a Power Query from the indicators table?</div>
-                        <div class="toggle-icon" id="icon-api-faq-16">▼</div>
+                        <div class="toggle-icon" id="icon-api-faq-15">▼</div>
                     </div>
-                    <div class="answer-container" id="api-faq-16">
+                    <div class="answer-container" id="api-faq-15">
                         <div class="answer">Keep the table highlighted, click 'Enable content' if there's a warning, then open Data tab → Get Data → From Table/Range. In the Query Settings sidebar, rename the query to 'indicators'. Add a custom column called 'Join Column' with the formula value '=1', change its type to Whole Number, then click Close and Load in the Home ribbon to finish.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-17')">
+                    <div class="question-header" onclick="toggleAnswer('api-faq-16')">
                         <div class="question">How do you create a custom Power Query function for retrieving ENTSOG Transparency Platform data?</div>
-                        <div class="toggle-icon" id="icon-api-faq-17">▼</div>
+                        <div class="toggle-icon" id="icon-api-faq-16">▼</div>
                     </div>
-                    <div class="answer-container" id="api-faq-17">
+                    <div class="answer-container" id="api-faq-16">
                         <div class="answer">Go to Data → Get Data → From Other Sources → Blank Query. In the Home tab, select Advanced Editor. Replace the predefined text with the code snippet provided in the support text sheet. Rename the function to 'fnGetTPDataFromURL' and click Close & Load. This creates a function that retrieves data via API URLs in a readable format.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-18')">
+                    <div class="question-header" onclick="toggleAnswer('api-faq-17')">
                         <div class="question">How do you create a join column in Power Query for connecting datasets?</div>
-                        <div class="toggle-icon" id="icon-api-faq-18">▼</div>
+                        <div class="toggle-icon" id="icon-api-faq-17">▼</div>
                     </div>
-                    <div class="answer-container" id="api-faq-18">
+                    <div class="answer-container" id="api-faq-17">
                         <div class="answer">Go to Add Column → Custom Column, rename it 'Join Column', and in the formula field enter '=1'. Click OK, then right-click the new column header and change its type to Whole Number. This column allows you to join queries later.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-19')">
+                    <div class="question-header" onclick="toggleAnswer('api-faq-18')">
                         <div class="question">How do you create the API URLs query by joining Operators and Indicators in Power Query?</div>
-                        <div class="toggle-icon" id="icon-api-faq-19">▼</div>
+                        <div class="toggle-icon" id="icon-api-faq-18">▼</div>
                     </div>
-                    <div class="answer-container" id="api-faq-19">
+                    <div class="answer-container" id="api-faq-18">
                         <div class="answer">Add a new sheet called 'API URLs'. Go to Data → Get Data → Combine Queries → Merge. Select 'Get Operators' as the first query and 'Indicators' as the second query. Highlight the 'Join Column' in both tables and leave the Join Kind as the default Left Outer Join. Rename the query to 'Create URL' in the Query Settings panel.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-20')">
+                    <div class="question-header" onclick="toggleAnswer('api-faq-19')">
                         <div class="question">How do you edit an existing Power Query to change operators or indicators?</div>
+                        <div class="toggle-icon" id="icon-api-faq-19">▼</div>
+                    </div>
+                    <div class="answer-container" id="api-faq-19">
+                        <div class="answer">Go to the Data ribbon and click Queries & Connections to open the right-hand pane. Right-click on the query name and select Edit. This opens the Power Query Editor where you can modify filtering, add/remove operators or indicators, and adjust query steps.</div>
+                    </div>
+                </div>
+                <div class="faq-item" data-category="api">
+                    <div class="question-header" onclick="toggleAnswer('api-faq-20')">
+                        <div class="question">How do you set up the Operators query in Power Query?</div>
                         <div class="toggle-icon" id="icon-api-faq-20">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-20">
-                        <div class="answer">Go to the Data ribbon and click Queries & Connections to open the right-hand pane. Right-click on the 'Create URL' query and select Edit to open it in the Power Query Editor. Click on the 'Filtered Rows' step in the Applied Steps panel, then change the Operator Label and Indicators as needed.</div>
+                        <div class="answer">Filter the 'Operator Type Label' column for 'TSO' only, then filter the 'Membership Label' column to show only 'Member' or 'Observer' (excluding 'Not Member'). The recommended columns to keep are: Operator Key, Operator Label, Operator Country Key, Membership Label, and Operator Type Label. This ensures you're working with active TSOs publishing on the ENTSOG Transparency Platform.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-21')">
-                        <div class="question">How do you filter operator data to show only active TSOs publishing on the ENTSOG Transparency Platform?</div>
+                        <div class="question">How do you invoke the custom function in Power Query to retrieve data?</div>
                         <div class="toggle-icon" id="icon-api-faq-21">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-21">
-                        <div class="answer">Filter the 'Operator Type Label' column for 'TSO' only. Then filter the 'Membership Label' column to remove 'Deactivated' and 'Unaffiliated' entries, as these operators don't publish data on the platform.</div>
+                        <div class="answer">In the Add Column ribbon, click 'Invoke Custom Function'. In the Function Query field, select 'fnGetTPDataFromURL'. In the API URL field, select the column name 'Custom' (the column containing your API URLs). Click OK to create the new column with the returned data.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-22')">
-                        <div class="question">How do you invoke the custom function in Power Query to retrieve data?</div>
+                        <div class="question">How do you refresh data after changing query parameters?</div>
                         <div class="toggle-icon" id="icon-api-faq-22">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-22">
-                        <div class="answer">In the Add Column ribbon, click 'Invoke Custom Function'. In the Function Query field, select 'fnGetTPDataFromURL'. Click OK, then expand the new column using the two-arrow icon and uncheck 'Use original column name as prefix'. Finally, click Close & Load to load the results into the workbook.</div>
+                        <div class="answer">After updating your query parameters and clicking Close & Load, go to the GetTPData sheet. In the Queries & Connections pane, right-click 'GetTPData' and select Refresh. Alternatively, use the Refresh All button in the Data ribbon to update all queries in the workbook.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-23')">
-                        <div class="question">How do you refresh data after changing query parameters?</div>
+                        <div class="question">How do you set up the Indicators sheet in Power Query?</div>
                         <div class="toggle-icon" id="icon-api-faq-23">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-23">
-                        <div class="answer">After updating your query parameters and clicking Close & Load, go to the GetTPData sheet. In the Queries & Connections pane, right-click 'API URL' and select Refresh. This will update your API queries to reflect the new indicators and selected operators.</div>
+                        <div class="answer">Open a blank sheet in your workbook and name it 'indicators'. Copy the indicators from the API manual (page 5) and paste them into column A. The Indicators sheet is a manual table that must be updated manually when new indicators are added to the platform, unlike the Operators sheet which is loaded via Power Query.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-24')">
-                        <div class="question">How do you set up the indicators table in Excel for Power Query?</div>
+                        <div class="question">How does the direct download parameter work in API calls?</div>
                         <div class="toggle-icon" id="icon-api-faq-24">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-24">
-                        <div class="answer">Open a blank sheet in your workbook and name it 'indicators'. Copy the indicators from the API manual (page 5) into the spreadsheet. Add a header row with 'Indicator Name' and 'Remarks' columns. Add 'CMP-CMA' in the Remarks column for the four available through indicators. Transform this into a table by clicking Insert → Table and checking 'my table has headers'.</div>
+                        <div class="answer">When you copy an API call with the direct download parameter, the link is slightly longer because it includes 'directDownload=true'. This parameter triggers automatic file download in browsers instead of displaying results in the browser window.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-25')">
-                        <div class="question">How does the direct download parameter work in API calls?</div>
+                        <div class="question">How does the periodFrom/periodTo parameter work in API calls?</div>
                         <div class="toggle-icon" id="icon-api-faq-25">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-25">
-                        <div class="answer">When you copy an API call with the direct download parameter, the link is slightly longer because it includes this parameter at the end. When you paste this link into a browser, it automatically generates and downloads a document (e.g., Excel file) with the requested data without requiring manual download steps.</div>
+                        <div class="answer">In the API call, use 'from' and 'to' parameters (not 'periodFrom' and 'periodTo'). Format: YYYY-MM-DD. The platform converts these to the appropriate periodFrom/periodTo based on the indicator's periodicity (hourly/daily).</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-26')">
-                        <div class="question">How does the periodFrom/periodTo parameter work in API calls?</div>
+                        <div class="question">I'm experiencing SSL certificate verification errors with Python API calls. What should I do?</div>
                         <div class="toggle-icon" id="icon-api-faq-26">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-26">
-                        <div class="answer">In the API call, use 'from' and 'to' parameters (not 'periodFrom' and 'periodTo'). Format: YYYY-MM-DD. Example: from=2024-01-01&to=2024-01-31.</div>
+                        <div class="answer">This is a known issue that can occur with Python-generated API calls. If you encounter certificate verification errors, you can either: 1) Update your Python certificates, or 2) Add verify=False to your requests (not recommended for production). Contact ENTSOG support if the issue persists.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-27')">
-                        <div class="question">I'm experiencing SSL certificate verification errors with Python API calls. What should I do?</div>
+                        <div class="question">Is there a daily limit on API requests per user?</div>
                         <div class="toggle-icon" id="icon-api-faq-27">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-27">
-                        <div class="answer">This is a known issue that can occur with Python-generated API calls. If you encounter certificate verification problems, please contact ENTSOG support as they are aware of this issue and can help resolve it.</div>
-                    </div>
-                </div>
-                <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-28')">
-                        <div class="question">Is there a daily limit on API requests per user?</div>
-                        <div class="toggle-icon" id="icon-api-faq-28">▼</div>
-                    </div>
-                    <div class="answer-container" id="api-faq-28">
                         <div class="answer">No, the limits pertain to calls per minute (maximum 6 per minute) throughout the day, not a 24-hour total limit.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-29')">
+                    <div class="question-header" onclick="toggleAnswer('api-faq-28')">
                         <div class="question">My IP address seems to be blocked from making API requests. What should I do?</div>
+                        <div class="toggle-icon" id="icon-api-faq-28">▼</div>
+                    </div>
+                    <div class="answer-container" id="api-faq-28">
+                        <div class="answer">If your IP is blocked, contact ENTSOG support immediately. The platform uses throttling mechanisms to protect server performance. Excessive requests may trigger temporary blocks.</div>
+                    </div>
+                </div>
+                <div class="faq-item" data-category="api">
+                    <div class="question-header" onclick="toggleAnswer('api-faq-29')">
+                        <div class="question">What API endpoints are available for point data?</div>
                         <div class="toggle-icon" id="icon-api-faq-29">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-29">
-                        <div class="answer">If your IP is blocked, contact ENTSOG support immediately. The platform uses throttling mechanisms to manage server load, and blocks may occur if you exceed usage limits. Stop making API requests until the issue is resolved to avoid further restrictions.</div>
+                        <div class="answer">Point data endpoints include: /operationalDatas (nominations, allocations, physical flows, capacities), /aggregatedData (balancing zone data), /interruptions (planned and unplanned interruptions), /tariffsData (tariff information for network points).</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-30')">
-                        <div class="question">What API endpoints are available for point data?</div>
+                        <div class="question">What API endpoints are available for referential data?</div>
                         <div class="toggle-icon" id="icon-api-faq-30">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-30">
-                        <div class="answer">Point data endpoints include: /operationalDatas (nominations, allocations, physical flows, capacities, interruptions, CMP, gas quality), /cmpUnsuccessfulRequests, /cmpUnavailables, /cmpAuctions, and /interruptions.</div>
+                        <div class="answer">Referential data endpoints include: /connectionPoints (interconnection points), /operators (all operators), /operatorPointDirections (operator-point-direction combinations), /balancingZones (balancing zone information).</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-31')">
-                        <div class="question">What API endpoints are available for referential data?</div>
+                        <div class="question">What API endpoints are available for tariff data?</div>
                         <div class="toggle-icon" id="icon-api-faq-31">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-31">
-                        <div class="answer">Referential data endpoints include: /connectionPoints (interconnection points), /operators (all operators), /balancingZones (European balancing zones), /operatorPointDirections (all flow directions), /interconnections (interconnections between systems), and /aggregateInterconnections (connections between TSOs and balancing zones).</div>
+                        <div class="answer">Tariff data endpoints include: /tariffsSimulations.xml (simulation of costs for flowing 1 GWh/day/year through entry/exit points), /tariffsData (published tariff information per network point).</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-32')">
-                        <div class="question">What API endpoints are available for tariff data?</div>
+                        <div class="question">What additional filtering parameters can I use in UMM API calls?</div>
                         <div class="toggle-icon" id="icon-api-faq-32">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-32">
-                        <div class="answer">Tariff data endpoints include: /tariffsSimulations.xml (simulation of costs for flowing 1 GWh/day/year for each IP) and /tariffsFulls.xml (information about tariff types and components).</div>
+                        <div class="answer">You can use 'events=Active' to filter by event status, 'isLatestVersion=Yes' to get only the latest version of UMMs, 'operator' for specific operators, 'from' and 'to' for date ranges, and 'ummids' for specific UMM IDs.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-33')">
-                        <div class="question">What additional tags can I use in UMM API calls?</div>
+                        <div class="question">What are best practices for optimizing API calls?</div>
                         <div class="toggle-icon" id="icon-api-faq-33">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-33">
-                        <div class="answer">You can use 'events=Active' to filter by event status and 'isLatestVersion=Yes' to get only the latest version of UMMs.</div>
+                        <div class="answer">Avoid concurrent requests, add cool down time if receiving HTTP Code 429, always use pointDirection parameter in aggregatedData calls, limit date ranges to avoid timeouts, and schedule automated calls during off-peak hours (18:00-06:00 CET).</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-34')">
-                        <div class="question">What are best practices for optimizing API calls?</div>
+                        <div class="question">What are the API execution limits and why should I use date filters?</div>
                         <div class="toggle-icon" id="icon-api-faq-34">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-34">
-                        <div class="answer">Avoid concurrent requests, add cool down time if receiving HTTP Code 429, always use pointDirection parameter, include operatorKey parameter when querying pointKey, specify indicators, use additional filters (periodFrom, periodTo, periodType, PublicationDateTime), and don't use sort-parameter for larger queries.</div>
+                        <div class="answer">The Transparency Platform limits API execution to 60 seconds per call, and all APIs return a maximum of 100 rows by default (override with limit parameter). Date period limits are essential to ensure queries complete within the timeout and to make requests more efficient. Users should apply filters (date ranges, points, operators, indicators) to avoid timeouts.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-35')">
-                        <div class="question">What are the API call limitations on the transparency platform?</div>
+                        <div class="question">When should I send API requests and what affects performance?</div>
                         <div class="toggle-icon" id="icon-api-faq-35">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-35">
-                        <div class="answer">API calls must be executable within 60 seconds, and users should make maximum 6 API calls per minute. If receiving timeout or too many requests errors, wait and add a cool down time.</div>
+                        <div class="answer">The optimal time for API requests is 18:00-06:00 Central European time (lowest server load). Peak usage is 6 AM - 12 PM CET. API performance can be affected by high server load during peak hours or platform maintenance. The platform implements throttling (max 6 calls per minute) to balance load. Check for published UMMs about ongoing issues if problems persist outside peak hours.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-36')">
-                        <div class="question">What are the API execution limits on the ENTSOG Transparency Platform?</div>
+                        <div class="question">What are the RSS feed URLs for UMMs?</div>
                         <div class="toggle-icon" id="icon-api-faq-36">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-36">
-                        <div class="answer">The Transparency Platform limits API execution to 60 seconds per call, meaning the data requested must be retrievable within that time. To prevent system overload, users are limited to six API calls per minute. Therefore, it's recommended to include a date period limit in your API queries.</div>
+                        <div class="answer">Gas UMM RSS feed: https://transparency.entsog.eu/api/v1/feed/ugf/rss. Other Market Information RSS feed: https://transparency.entsog.eu/api/v1/feed/omi/rss</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-37')">
-                        <div class="question">What are the API throttling limits and when are peak usage times?</div>
+                        <div class="question">What are the default settings and limits for API calls?</div>
                         <div class="toggle-icon" id="icon-api-faq-37">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-37">
-                        <div class="answer">The Transparency Platform implements a general throttling mechanism to balance server load for all users. Peak hours with the highest server load are typically between 6:00 AM and 12:00 PM CET. If you experience throttling issues, consider scheduling API calls outside these peak hours.</div>
+                        <div class="answer">Default indicator is Physical Flow, default period is 30 days back in time. By default, all APIs limit the result set to 100 rows (override with limit parameter, e.g., limit=500 or limit=-1 for no limit, though -1 may cause timeouts).</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-38')">
-                        <div class="question">What are the RSS feed URLs for UMMs?</div>
+                        <div class="question">What are the four key sheets in a complete Power Query workbook for ENTSOG data?</div>
                         <div class="toggle-icon" id="icon-api-faq-38">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-38">
-                        <div class="answer">Gas UMM RSS feed: https://transparency.entsog.eu/api/v1/feed/ugf/rss. Other Market Information RSS feed: https://transparency.entsog.eu/api/v1/feed/omi/rss. These contain UMMs published since 11 pm D-1 to current day.</div>
+                        <div class="answer">1. Operators - loads the up-to-date list of operators from the platform. 2. Indicators - a manual table listing desired data indicators. 3. API URLs - creates customized URLs by joining operators and indicators. 4. GetTPData - fetches and displays data using the generated URLs.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-39')">
-                        <div class="question">What are the default settings when using an API call link on the ENTSOG Transparency Platform?</div>
+                        <div class="question">What are the recommended time limits for API calls when using Power Query?</div>
                         <div class="toggle-icon" id="icon-api-faq-39">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-39">
-                        <div class="answer">The default settings are: Indicator set to Physical Flow, and Period set to 30 days back in time. These defaults are applied when you reload points using a saved API link, though you can customize these parameters in the API call.</div>
+                        <div class="answer">For daily volumes: maximum one full month per API call. For hourly values: maximum one day per call. This helps avoid the 60-second timeout limit.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-40')">
-                        <div class="question">What are the four key sheets in a complete Power Query workbook for ENTSOG data?</div>
+                        <div class="question">What are the three steps to make an API compatible with Power Query in Excel?</div>
                         <div class="toggle-icon" id="icon-api-faq-40">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-40">
-                        <div class="answer">1. Operators - loads the up-to-date list of operators from the platform. 2. Indicators - a manual table of available indicators that must be updated manually. 3. API URL - contains joined results of Operators and Indicators, producing actual API URLs. 4. GetTPData - fetches and displays data from the platform via API calls using the custom function.</div>
+                        <div class="answer">1. Copy the API link from the source. 2. Open Excel and go to Data → Get Data → From Text/CSV, then paste the API link. 3. Excel recognizes it as JSON, downloads the data, and converts it into a table format compatible with Power Query.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-41')">
-                        <div class="question">What are the recommended time limits for API calls when using Power Query?</div>
+                        <div class="question">What are transport data indicators in the context of the ENTSOG Transparency Platform API?</div>
                         <div class="toggle-icon" id="icon-api-faq-41">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-41">
-                        <div class="answer">For daily volumes: maximum one full month per API call. For hourly values: maximum one day per call. These limits ensure the API can retrieve data within the 60-second execution limit.</div>
+                        <div class="answer">Transport data indicators are the data indicators you want to pull data for from the ENTSOG Transparency Platform, such as Nomination, Allocation, Physical Flow, Firm Available, Firm Booked, Interruptible Available, Interruptible Booked, GCV, WCV, and others.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-42')">
-                        <div class="question">What are the three steps to make an API compatible with Power Query in Excel?</div>
+                        <div class="question">What does API stand for and what is its purpose?</div>
                         <div class="toggle-icon" id="icon-api-faq-42">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-42">
-                        <div class="answer">1. Copy the API link from the source. 2. Open Excel and go to Data → Get Data → From Text/CSV, then paste the URL into the File name field. 3. Transform the data: select Document, right-click Transform Data, delete the Navigation step, open Advanced Editor and replace 'Web.Page' with 'Csv.Document', then use First Row as Headers.</div>
+                        <div class="answer">API stands for Application Programming Interface. It is essentially an interface for machines, not for humans. It allows automated systems to query and retrieve data programmatically, enabling integration with other applications and automated data pipelines.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-43')">
-                        <div class="question">What are transport data indicators in the context of the ENTSOG Transparency Platform API?</div>
+                        <div class="question">What does the forceDownload parameter do?</div>
                         <div class="toggle-icon" id="icon-api-faq-43">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-43">
-                        <div class="answer">Transport data indicators are the data indicators you want to pull data for from the ENTSOG Transparency Platform. They include both transport data indicators and CMP data indicators, which need to be set up as part of building your API database in Power Query.</div>
+                        <div class="answer">When using a browser, the forceDownload=true parameter forces the API response to be downloaded as a file instead of being displayed in the browser window. This is useful for saving data directly.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-44')">
-                        <div class="question">What columns are recommended for the Operator query in Power Query?</div>
+                        <div class="question">What does the hasData parameter do?</div>
                         <div class="toggle-icon" id="icon-api-faq-44">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-44">
-                        <div class="answer">The recommended columns are: Operator Key, Operator Label, Operator Country Key, Membership Label, and TSO EIC Code. For better readability, sort the rows alphabetically by Operator Label.</div>
+                        <div class="answer">The hasData parameter filters Operator Point Directions (OPDs) to return only those belonging to TSOs that are actually publishing data on the Transparency Platform, excluding inactive or non-publishing operators.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-45')">
-                        <div class="question">What does API stand for and what is its purpose?</div>
+                        <div class="question">What does the sorting parameter do in API calls?</div>
                         <div class="toggle-icon" id="icon-api-faq-45">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-45">
-                        <div class="answer">API stands for Application Programming Interface. It is essentially an interface for machines, not for humans. Using a restaurant metaphor: the API acts as the waiter, the database is the kitchen, the data is the food, and your application is the table where data is delivered. The API carries your data request to the database and brings the data back to you.</div>
+                        <div class="answer">The sorting parameter allows results to be sorted in ascending order based on a specified API field. Format: sorting={fieldname}. This helps organize returned data in a predictable order.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-46')">
-                        <div class="question">What does the forceDownload parameter do?</div>
+                        <div class="question">What does the timeZone parameter do in API calls?</div>
                         <div class="toggle-icon" id="icon-api-faq-46">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-46">
-                        <div class="answer">When using a browser, the forceDownload=true parameter forces the API response to be downloaded as a file instead of being displayed in the browser.</div>
+                        <div class="answer">The timeZone parameter converts all date filters (from, to, periodFrom, periodTo, lastUpdateDate) into the specified time zone before executing the query. This helps with queries across different time zones.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-47')">
-                        <div class="question">What does the hasData parameter do?</div>
+                        <div class="question">What happens to the additional sheet created after finishing the indicators query?</div>
                         <div class="toggle-icon" id="icon-api-faq-47">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-47">
-                        <div class="answer">The hasData parameter filters Operator Point Directions (OPDs) to return only those belonging to TSOs that publish REG715 information. Use hasData=1 to filter for TSOs actively submitting data.</div>
+                        <div class="answer">After finishing the query with Close and Load, an additional sheet will be added. You can keep it or delete it as it's not essential for the workflow.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-48')">
-                        <div class="question">What does the sorting parameter do in API calls?</div>
+                        <div class="question">What happens when you expand the Indicators column in the merged query?</div>
                         <div class="toggle-icon" id="icon-api-faq-48">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-48">
-                        <div class="answer">The sorting parameter allows results to be sorted in ascending order based on a specified API field. Only one field can be used at a time. Example: sorting=periodTo.</div>
+                        <div class="answer">When you expand the Indicators column by clicking the gray expand icon, uncheck 'Use original column name as prefix' to avoid redundant column headers. This creates clean, properly named columns from the joined data.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-49')">
-                        <div class="question">What does the timeZone parameter do in API calls?</div>
+                        <div class="question">What indicators are available for balancing zones?</div>
                         <div class="toggle-icon" id="icon-api-faq-49">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-49">
-                        <div class="answer">The timeZone parameter converts all date filters (from, to, periodFrom, periodTo, lastUpdateDate) into the specified time zone. Currently, only WET produces correct and consistent time conversions. Other values like CET, CEST, EST are accepted but may not affect the output.</div>
+                        <div class="answer">For balancing zones (aggregatedData endpoint), available indicators are: Allocation, Nomination/Renomination, Physical Flow, GCV, WCV, Pressure, Wobbe Index. These provide aggregated data at the balancing zone level.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-50')">
-                        <div class="question">What happens to the additional sheet created after finishing the indicators query?</div>
+                        <div class="question">What indicators are available for operational data?</div>
                         <div class="toggle-icon" id="icon-api-faq-50">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-50">
-                        <div class="answer">After finishing the query with Close and Load, an additional sheet will be added. You can keep it or delete it—it's not necessary anymore as the query is now saved in the Queries and Connections sidebar.</div>
+                        <div class="answer">Available indicators include: Nomination, Allocation, Physical Flow, Firm Available, Firm Booked, Firm Interruption Capacity, Firm Technical, Interruptible Available, Interruptible Booked, Interruptible Interruption Capacity, Interruptible Total, GCV, WCV, and Pressure.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-51')">
-                        <div class="question">What happens when you expand the Indicators column in the merged query?</div>
+                        <div class="question">What is Power Query and how is it used with the ENTSOG Transparency Platform?</div>
                         <div class="toggle-icon" id="icon-api-faq-51">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-51">
-                        <div class="answer">When you expand the Indicators column by clicking the gray expand icon, uncheck 'Use original column name as prefix' and select only the Indicator Name column. This increases the total number of rows, as each operator is now multiplied by the number of indicators.</div>
+                        <div class="answer">Power Query (now called Get & Transform) is a feature in Microsoft Excel used to retrieve and transform data from various sources. It can connect to the ENTSOG API, download data in JSON format, and automatically convert it into structured tables for analysis.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-52')">
-                        <div class="question">What indicators are available for balancing zones?</div>
+                        <div class="question">What are the API endpoints for Urgent Market Messages (UMMs)?</div>
                         <div class="toggle-icon" id="icon-api-faq-52">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-52">
-                        <div class="answer">For balancing zones (aggregatedData endpoint), available indicators are: Allocation, Nomination/Renomination, and Physical Flow.</div>
+                        <div class="answer">UMM endpoints include: /urgentMarketMessages (general endpoint), /umm/othermarketinformation (Other Market Information with parameters like from, to, operator, ummids), /umm/unavailabilitiesgasfacilities (Unavailabilities of Gas Facilities with parameters like ummids, operator). To view all versions of a specific UMM: https://transparency.entsog.eu/api/v1/urgentMarketMessages?ummids=[UMM_ID]</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
                     <div class="question-header" onclick="toggleAnswer('api-faq-53')">
-                        <div class="question">What indicators are available for operational data?</div>
+                        <div class="question">What is the ENTSOG Transparency Platform API?</div>
                         <div class="toggle-icon" id="icon-api-faq-53">▼</div>
                     </div>
                     <div class="answer-container" id="api-faq-53">
-                        <div class="answer">Available indicators include: Nomination, Allocation, Physical Flow, Firm Available, Firm Booked, Firm Technical, Interruptible Available, Interruptible Booked, Renomination, GCV, Wobbe Index, Methane Content, Hydrogen Content, Oxygen Content, and various interruption types (Planned/Unplanned for Firm and Interruptible capacity).</div>
-                    </div>
-                </div>
-                <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-54')">
-                        <div class="question">What is Power Query and how is it used with the ENTSOG Transparency Platform?</div>
-                        <div class="toggle-icon" id="icon-api-faq-54">▼</div>
-                    </div>
-                    <div class="answer-container" id="api-faq-54">
-                        <div class="answer">Power Query (now called Get & Transform) is a feature in Microsoft Excel used to retrieve and transform data. It can be used with ENTSOG Transparency Platform APIs to build and customize queries for fetching data directly into Excel as your working environment.</div>
-                    </div>
-                </div>
-                <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-55')">
-                        <div class="question">What is the API endpoint for Other Market Information UMMs?</div>
-                        <div class="toggle-icon" id="icon-api-faq-55">▼</div>
-                    </div>
-                    <div class="answer-container" id="api-faq-55">
-                        <div class="answer">The endpoint is https://transparency.entsog.eu/#/umm/othermarketinformation with various query parameters like from, to, operator, or ummids.</div>
-                    </div>
-                </div>
-                <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-56')">
-                        <div class="question">What is the API endpoint for Unavailabilities of Gas Facilities?</div>
-                        <div class="toggle-icon" id="icon-api-faq-56">▼</div>
-                    </div>
-                    <div class="answer-container" id="api-faq-56">
-                        <div class="answer">The endpoint is https://transparency.entsog.eu/#/umm/unavailabilitiesgasfacilities with parameters like ummids or operator.</div>
-                    </div>
-                </div>
-                <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-57')">
-                        <div class="question">What is the API endpoint for Urgent Market Messages?</div>
-                        <div class="toggle-icon" id="icon-api-faq-57">▼</div>
-                    </div>
-                    <div class="answer-container" id="api-faq-57">
-                        <div class="answer">The endpoint for Urgent Market Messages is /urgentMarketMessages.</div>
-                    </div>
-                </div>
-                <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-58')">
-                        <div class="question">What is the API format to view all versions of a UMM?</div>
-                        <div class="toggle-icon" id="icon-api-faq-58">▼</div>
-                    </div>
-                    <div class="answer-container" id="api-faq-58">
-                        <div class="answer">Use the format: https://transparency.entsog.eu/api/v1/urgentMarketMessages?ummids=[UMM_ID]</div>
-                    </div>
-                </div>
-                <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-59')">
-                        <div class="question">What is the ENTSOG Transparency Platform API?</div>
-                        <div class="toggle-icon" id="icon-api-faq-59">▼</div>
-                    </div>
-                    <div class="answer-container" id="api-faq-59">
                         <div class="answer">The ENTSOG Transparency Platform provides a comprehensive query mechanism through a REST API, allowing all published information to be extracted programmatically in multiple formats (JSON, XML, CSV, XLSX). The API is publicly available, ensuring transparent and consistent access to data across all users.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-60')">
-                        <div class="question">What is the default limit for API records returned?</div>
-                        <div class="toggle-icon" id="icon-api-faq-60">▼</div>
-                    </div>
-                    <div class="answer-container" id="api-faq-60">
-                        <div class="answer">By default, all APIs limit the result set to 100 rows. This can be overridden using the limit parameter (e.g., limit=500 for more records, or limit=-1 for no limit, though this may cause timeouts on large datasets).</div>
-                    </div>
-                </div>
-                <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-61')">
+                    <div class="question-header" onclick="toggleAnswer('api-faq-54')">
                         <div class="question">What is the difference between operationaldata and operationaldatas endpoints?</div>
-                        <div class="toggle-icon" id="icon-api-faq-61">▼</div>
+                        <div class="toggle-icon" id="icon-api-faq-54">▼</div>
                     </div>
-                    <div class="answer-container" id="api-faq-61">
+                    <div class="answer-container" id="api-faq-54">
                         <div class="answer">Both operationaldata (singular) and operationaldatas (plural) are valid endpoints that return identical results. This is due to the singularization logic of the framework. For consistency, users are advised to use the documented operationaldatas form.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-62')">
+                    <div class="question-header" onclick="toggleAnswer('api-faq-55')">
                         <div class="question">What is the general format of the TP API?</div>
-                        <div class="toggle-icon" id="icon-api-faq-62">▼</div>
+                        <div class="toggle-icon" id="icon-api-faq-55">▼</div>
                     </div>
-                    <div class="answer-container" id="api-faq-62">
+                    <div class="answer-container" id="api-faq-55">
                         <div class="answer">The general format is: https://transparency.entsog.eu/api/v1/<endpoint> where <endpoint> is the API type (e.g., /operationaldatas). Output formats can be JSON (default), XML (.xml), CSV (.csv), or XLSX (.xlsx).</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-63')">
-                        <div class="question">What is the maximum execution time for API queries?</div>
-                        <div class="toggle-icon" id="icon-api-faq-63">▼</div>
-                    </div>
-                    <div class="answer-container" id="api-faq-63">
-                        <div class="answer">All API queries are subject to a maximum execution time of 60 seconds. Users are encouraged to apply filters (e.g., date ranges, points, operators, indicators) to avoid timeouts.</div>
-                    </div>
-                </div>
-                <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-64')">
+                    <div class="question-header" onclick="toggleAnswer('api-faq-56')">
                         <div class="question">What is the recommended format for a Transport Data API URL?</div>
-                        <div class="toggle-icon" id="icon-api-faq-64">▼</div>
+                        <div class="toggle-icon" id="icon-api-faq-56">▼</div>
                     </div>
-                    <div class="answer-container" id="api-faq-64">
+                    <div class="answer-container" id="api-faq-56">
                         <div class="answer">The API URL pattern should look like: 'https://transparency.entsog.eu/api/v1/transportdata?indicators=' & [Indicator Name] & '&operators=' & [Operator Label] & '&from=' & [StartDate] & '&to=' & [EndDate]. You can double-click field names from the list of available columns instead of typing them manually.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-65')">
+                    <div class="question-header" onclick="toggleAnswer('api-faq-57')">
                         <div class="question">What mandatory parameters does the /aggregatedData endpoint require?</div>
-                        <div class="toggle-icon" id="icon-api-faq-65">▼</div>
+                        <div class="toggle-icon" id="icon-api-faq-57">▼</div>
                     </div>
-                    <div class="answer-container" id="api-faq-65">
+                    <div class="answer-container" id="api-faq-57">
                         <div class="answer">The /aggregatedData endpoint requires: pointDirection, from and to (date range), indicator, and periodType. Calling the endpoint without these filters will return no data.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-66')">
+                    <div class="question-header" onclick="toggleAnswer('api-faq-58')">
                         <div class="question">What operators are allowed for filtering API data?</div>
-                        <div class="toggle-icon" id="icon-api-faq-66">▼</div>
+                        <div class="toggle-icon" id="icon-api-faq-58">▼</div>
                     </div>
-                    <div class="answer-container" id="api-faq-66">
+                    <div class="answer-container" id="api-faq-58">
                         <div class="answer">'=' is the only operator allowed to filter data. Other operators such as '<' or '>' are not allowed.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-67')">
+                    <div class="question-header" onclick="toggleAnswer('api-faq-59')">
                         <div class="question">What parameters are included in an API call on the ENTSOG Transparency Platform?</div>
-                        <div class="toggle-icon" id="icon-api-faq-67">▼</div>
+                        <div class="toggle-icon" id="icon-api-faq-59">▼</div>
                     </div>
-                    <div class="answer-container" id="api-faq-67">
+                    <div class="answer-container" id="api-faq-59">
                         <div class="answer">API calls include: the indicator (e.g., Physical Flow), the period/date range (entry from/entry to), and optionally a direct download parameter. These parameters reflect your selected settings and can be customized to retrieve different indicators or change the time range.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-68')">
-                        <div class="question">What should I do if I experience API performance degradation?</div>
-                        <div class="toggle-icon" id="icon-api-faq-68">▼</div>
-                    </div>
-                    <div class="answer-container" id="api-faq-68">
-                        <div class="answer">API performance can be affected by high server load, especially during peak hours (6 AM - 12 PM CET), or platform maintenance. Check for any published Urgent Market Messages (UMMs) about ongoing issues. If problems persist outside peak hours, contact ENTSOG support.</div>
-                    </div>
-                </div>
-                <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-69')">
+                    <div class="question-header" onclick="toggleAnswer('api-faq-60')">
                         <div class="question">What should you expect when running the GetTPData query for the first time?</div>
-                        <div class="toggle-icon" id="icon-api-faq-69">▼</div>
+                        <div class="toggle-icon" id="icon-api-faq-60">▼</div>
                     </div>
-                    <div class="answer-container" id="api-faq-69">
+                    <div class="answer-container" id="api-faq-60">
                         <div class="answer">Be patient, as the process can take a few moments. The system needs time to fetch data from the Transparency Platform via the API. After completion, you'll have a dynamic Excel workbook capable of automatically fetching, combining, and displaying data from the ENTSOG Transparency Platform.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-70')">
-                        <div class="question">When is the optimal time to send API requests to the transparency platform?</div>
-                        <div class="toggle-icon" id="icon-api-faq-70">▼</div>
+                    <div class="question-header" onclick="toggleAnswer('api-faq-61')">
+                        <div class="question">Where can I find the API documentation and list of available indicators?</div>
+                        <div class="toggle-icon" id="icon-api-faq-61">▼</div>
                     </div>
-                    <div class="answer-container" id="api-faq-70">
-                        <div class="answer">18:00-06:00 Central European time is the time slot with the lowest load on the TP servers. Peak load is between 6 am and noon.</div>
-                    </div>
-                </div>
-                <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-71')">
-                        <div class="question">Where can I find the API documentation and manual?</div>
-                        <div class="toggle-icon" id="icon-api-faq-71">▼</div>
-                    </div>
-                    <div class="answer-container" id="api-faq-71">
-                        <div class="answer">The complete API manual is available under the Subscribe section on the Transparency Platform. It includes a full list of available APIs and detailed documentation. You can also find video tutorials in the Help/Videos section.</div>
+                    <div class="answer-container" id="api-faq-61">
+                        <div class="answer">The complete API manual is available under the Subscribe section on the Transparency Platform. It includes a full list of available APIs and detailed documentation. The indicators are specifically listed on page 5 of the API manual, covering both transport data indicators and CMP data indicators. You can also find video tutorials in the Help/Videos section.</div>
                     </div>
                 </div>
                 <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-72')">
-                        <div class="question">Where can you find the list of available indicators for the ENTSOG Transparency Platform API?</div>
-                        <div class="toggle-icon" id="icon-api-faq-72">▼</div>
-                    </div>
-                    <div class="answer-container" id="api-faq-72">
-                        <div class="answer">The indicators are listed in the API manual on the Transparency Platform, specifically on page 5. The list includes both transport data indicators and CMP data indicators.</div>
-                    </div>
-                </div>
-                <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-73')">
-                        <div class="question">Which sheet in the Power Query workbook needs to be updated manually?</div>
-                        <div class="toggle-icon" id="icon-api-faq-73">▼</div>
-                    </div>
-                    <div class="answer-container" id="api-faq-73">
-                        <div class="answer">The Indicators sheet is a manual table that must be updated manually when new indicators are added to the platform. Unlike the Operators sheet, it is not loaded via Power Query.</div>
-                    </div>
-                </div>
-                <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-74')">
-                        <div class="question">Why is it important to add date period limits to API queries?</div>
-                        <div class="toggle-icon" id="icon-api-faq-74">▼</div>
-                    </div>
-                    <div class="answer-container" id="api-faq-74">
-                        <div class="answer">Date period limits are recommended because the Transparency Platform limits API execution to 60 seconds per call. Adding date limits ensures the data requested can be retrieved within that time frame and helps make queries more efficient and targeted, preventing system overload.</div>
-                    </div>
-                </div>
-                <div class="faq-item" data-category="api">
-                    <div class="question-header" onclick="toggleAnswer('api-faq-75')">
+                    <div class="question-header" onclick="toggleAnswer('api-faq-62')">
                         <div class="question">Why should you paste indicators into Notepad first when copying from the PDF?</div>
-                        <div class="toggle-icon" id="icon-api-faq-75">▼</div>
+                        <div class="toggle-icon" id="icon-api-faq-62">▼</div>
                     </div>
-                    <div class="answer-container" id="api-faq-75">
+                    <div class="answer-container" id="api-faq-62">
                         <div class="answer">When copying from a PDF, pasting into Notepad first ensures that every indicator appears in a separate line, which is the desired format for the spreadsheet. This helps with proper formatting before transferring to Excel.</div>
                     </div>
                 </div>
